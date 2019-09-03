@@ -7,27 +7,45 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/main.css">
-    <title>HW1_UDOT</title>
+    <title>HW2_UDOT</title>
 </head>
 
 <body class="wrapper">
     <div class="block-scheme">
         <h1>Required</h1>
-        <div class="scheme-first">
-            <img src="./img/HW1_1_Udot.svg" alt="Block-scheme-1">
-        </div>
+        <p>Введите строку:</p>
+        <input type="text" id="inputString" size="50" >
+        <button id="firstLetterButton">Вывести первые буквы слов</button>
+        <h2>Первые буквы слов сроки:</h2>
+        <p id="firstLetterList"></p>
     </div>
     <div class="block-scheme">
         <h1>Additional</h1>
-        <div class="scheme-second">
-            <img src="./img/HW1_2_Udot.svg" alt="Block-scheme-2">
-        </div>
+        <p>Введите строку для определения числового типа:</p>
+        <input type="text" id="inputNumber" size="50" >
+        <button id="determineNumb">Вывести дату если введено число</button>
+        <h2>Результат:</h2>
+        <p id="result"></p>
     </div>
     <div class="block-scheme">
         <h1>Additional #2</h1>
-        <p>Введите целые числа через запятую:</p>
-        <input type="text" id="input" size="50" >
-        <button id="button">Вывести числа больше 50!!!</button>
+        <pre> function testUserText ( userText ) {
+             return userText.split('<').join('&lt')
+      }
+      function insertUserText ( userText ) {
+            var x = document.createElement ( 'div' )
+            x.innerHTML = testUserText ( userText )
+            document.body.appendChild ( x )
+      }
+      
+      insertUserText (`&ltsvg/onload='document.write("Looser");
+                        document.body.style.backgroundColor="black";
+                        document.body.style.color="red";
+                        document.body.style.fontSize="50px";
+                        document.body.style.fontWeight="bold";
+                        document.body.style.textAlign="center";
+                        document.body.style.paddingTop="45%";'>`)
+    </pre>
     </div>
 
     <script src="./script.js"></script>
